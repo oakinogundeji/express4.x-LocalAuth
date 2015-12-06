@@ -59,7 +59,7 @@ app.use(bParser.urlencoded({ extended: true }));
 app.use(session({
   name: 'xpressBlu.sess', store: new mongodbStore({
     mongooseConnection: mongoose.connection,
-  touchAfter: 24 * 3600}), secret: 'qwertyuiop123456789', resave: true,
+  touchAfter: 24 * 3600}), secret: 'qwertyuiop123456789', resave: false,
   saveUninitialized: false, cookie: {maxAge: 1000 * 60 * 15}}));
 //==============================================================================
 /**
