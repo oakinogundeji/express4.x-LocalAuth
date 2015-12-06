@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "devURL": "http://localhost:3030",
+  "env": "development",
+  "dbURL": "mongodb://localhost/xpressLocalAuth",
+  "sessionSecret": "qwertyuiop123456789"
+}

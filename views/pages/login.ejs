@@ -1,0 +1,32 @@
+<!-- from '/views/pages/login.ejs'-->
+<!DOCTYPE html>
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <% include ../partials/header %>
+    </header>
+    <div class="jumbotron">
+      <div class="content">
+        <h1><span class="fa fa-lock"></span> Login</h1>
+        <% if(errMsg) {%>
+          <p class="errMsg"><%-errMsg%></p>
+        <% } %>
+        <form action="/login" method="post" class="form-inline">
+          <div class="form-group">
+            <input class="form-control"
+            type="email" name="email" placeholder="email">
+            <input class="form-control"
+            type="password" name="password" placeholder="password">
+          </div>
+          <input class="btn btn-success btn-default" type="submit">
+        </form>
+      </div>
+    </div>
+    <footer class="text-center">
+      <% include ../partials/footer %>
+    </footer>
+  </main>
+</body>

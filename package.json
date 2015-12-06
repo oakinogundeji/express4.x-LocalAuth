@@ -1,0 +1,27 @@
+{
+  "name": "chap1",
+  "version": "1.0.0",
+  "description": "A base test express app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Telios WebDev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "connect-mongo": "^0.8.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "mongoose": "^4.2.8",
+    "morgan": "^1.6.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "faker": "^3.0.1",
+    "should": "^7.1.1",
+    "supertest": "^1.1.0"
+  }
+}
